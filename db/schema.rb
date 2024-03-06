@@ -12,8 +12,7 @@
 
 ActiveRecord::Schema[7.1].define(version: 2024_03_06_091200) do
   create_table "products", force: :cascade do |t|
-    t.string "product_id"
-    t.string "integer"
+    t.integer "product_id"
     t.integer "shopping_cart_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
